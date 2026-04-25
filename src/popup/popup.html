@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasdeer Export Badge</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🏷️ Tasdee Export Badge</h1>
+      <p class="subtitle">Support local Gulf products</p>
+    </header>
+    
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-number" id="localCount">0</div>
+        <div class="stat-label">Local Products Found</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="totalCount">0</div>
+        <div class="stat-label">Total Products Checked</div>
+      </div>
+    </div>
+    
+    <div class="recent-products">
+      <h2>Recent Local Products</h2>
+      <div id="recentProducts" class="product-list">
+        <p class="empty">No local products found yet. Visit supported e-commerce sites!</p>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <button id="refreshBtn" class="btn btn-primary">
+        <span class="icon">🔄</span> Refresh
+      </button>
+      <button id="optionsBtn" class="btn btn-secondary">
+        <span class="icon">⚙️</span> Settings
+      </button>
+    </div>
+    
+    <footer>
+      <p>Supporting Gulf local businesses</p>
+      <p class="links">
+        <a href="https://github.com/Wsh7Ash/tasdeer-export-badge" target="_blank">GitHub</a>
+        <a href="#" id="reportIssue">Report Issue</a>
+      </p>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

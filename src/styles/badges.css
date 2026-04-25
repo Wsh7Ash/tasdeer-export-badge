@@ -1,0 +1,101 @@
+/* Tasdeer Export Badge Styles */
+
+.tasdee-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #00875a 0%, #00a652 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  animation: tasdee-fade-in 0.3s ease-in;
+}
+
+@keyframes tasdee-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tasdee-flag {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.tasdee-text {
+  white-space: nowrap;
+}
+
+/* Country-specific badge colors */
+.tasdee-badge-sa {
+  background: linear-gradient(135deg, #00875a 0%, #00a652 100%);
+  border-color: rgba(0, 103, 74, 0.5);
+}
+
+.tasdee-badge-ae {
+  background: linear-gradient(135deg, #1e88e5 0%, #42a5f5 100%);
+  border-color: rgba(21, 101, 192, 0.5);
+}
+
+.tasdee-badge-jo {
+  background: linear-gradient(135deg, #d32f2f 0%, #f44336 100%);
+  border-color: rgba(198, 40, 40, 0.5);
+}
+
+.tasdee-badge-bh {
+  background: linear-gradient(135deg, #e91e63 0%, #f06292 100%);
+  border-color: rgba(233, 30, 99, 0.5);
+}
+
+.tasdee-badge-qa {
+  background: linear-gradient(135deg, #9c27b0 0%, #ba68c8 100%);
+  border-color: rgba(156, 39, 176, 0.5);
+}
+
+.tasdee-badge-kw {
+  background: linear-gradient(135deg, #ff9800 0%, #ffb74d 100%);
+  border-color: rgba(255, 152, 0, 0.5);
+}
+
+.tasdee-badge-om {
+  background: linear-gradient(135deg, #4caf50 0%, #81c784 100%);
+  border-color: rgba(76, 175, 80, 0.5);
+}
+
+/* GCC-wide badge */
+.tasdee-badge-gcc {
+  background: linear-gradient(135deg, #ff6f00 0%, #ff8f00 100%);
+  border-color: rgba(230, 81, 0, 0.5);
+}
+
+/* Hover effect */
+.tasdee-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .tasdee-badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  
+  .tasdee-flag {
+    font-size: 14px;
+  }
+}
